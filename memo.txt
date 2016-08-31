@@ -1,0 +1,2 @@
+scikit learn randomforestで学習した結果について　predict()した場合とpredict_probaした場合でmean absolute errorでスコア出したとき結果が異なる模様。
+predict_probaは結果が揺らぐせいか？？
