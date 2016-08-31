@@ -1,2 +1,49 @@
 scikit learn randomforestで学習した結果について　predict()した場合とpredict_probaした場合でmean absolute errorでスコア出したとき結果が異なる模様。
 predict_probaは結果が揺らぐせいか？？
+
+"Rでディープラーニング
+R-3.2.1-win.exe
+と
+jdk-8u51-windows-x64.exe
+でパッケージをzipで入れまくったらできた"
+library(h2o)
+localH2O = h2o.init(ip = ""localhost"", port = 54321, startH2O = TRUE)
+# データの読み込み（今回はiris）
+
+irisPath = system.file(""extdata"", ""iris.csv"", package = ""h2o"")
+
+iris.hex = h2o.importFile(localH2O, path = irisPath)
+
+h2o.deeplearning(x = 1:4, y = 5, training_frame = iris.hex, activation = ""Tanh"")
+
+# H2Oのシャットダウン
+h2o.shutdown(localH2O)"
+
+"sql server データベースを違うディレクトリに移動したいとき、そのディレクトリにMSSQL$TESTDBを設定し、ユーザー権限(フル権限）を与える。
+
+オブジェクト名：NT Service\MSSQL$TESTDB　場所：そのPC名
+で設定できる。
+アタッチ、デタッチでディレクトリ移動できるようになる。"	
+
+データベース高速化	http://www.geocities.jp/mickindex/database/db_optimize.html
+
+"chainerインストールしてもcupyのimport等に失敗していたがいちどuninstallし、
+pip install --no-cache-dir chainer
+でいけた。依存するライブラリを更新したせいかも。"	
+pip install PySide==1.2.2　などとしてバージョンを指定してインストールできる	
+Chainerはインストールの順番が大事か？VC++,nvidia ドライバー、chainerの順？	
+
+python joblib.dump データサイズによっては？？Compress=1だと失敗する場合がある模様。無圧縮でシリアライズすればよい。	
+
+"python anacondaにてpip install sklearn-deapしてもscipyの依存関係解決できず失敗。コンパイラが入っていないことが問題ではなかった。
+Conda update scipy　すると　import scipyできなくなる（一緒にupdateされるnumpy等もimportできなくなる）。
+
+Conda update conda,conda update anacondaしてからdeap ,sklearn-deapをインストールしたところうまくいった。"	
+
+pythonのmultiprocessing　でなぜかipythonにソースコードを張り付けでは実行できず。	
+
+pythonのmultiprocessing　でなぜかspyderのipythonだと何かで不具合が起こると再起動まで？うまく動かず。コンソールからpyhon ***.pyするのがベストか？Ipythonとは相性悪いのか？？	
+
+xgboost gitからtortoisesvnを使ってデータを落とした。Full recursiveで全部落ちてくるので slnをもつ最新のバージョンにてjavawrapper以外を64bitReleaseでビルド。Python bindingフォルダでpython setup.py install	
+
+xgboost はmultioutputには対応していない模様。	
