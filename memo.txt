@@ -36,8 +36,10 @@ python joblib.dump ƒf[ƒ^ƒTƒCƒY‚É‚æ‚Á‚Ä‚ÍHHCompress=1‚¾‚Æ¸”s‚·‚éê‡‚ª‚ ‚é–Í—
 
 "python anaconda‚É‚Äpip install sklearn-deap‚µ‚Ä‚àscipy‚ÌˆË‘¶ŠÖŒW‰ğŒˆ‚Å‚«‚¸¸”sBƒRƒ“ƒpƒCƒ‰‚ª“ü‚Á‚Ä‚¢‚È‚¢‚±‚Æ‚ª–â‘è‚Å‚Í‚È‚©‚Á‚½B
 Conda update scipy@‚·‚é‚Æ@import scipy‚Å‚«‚È‚­‚È‚éiˆê‚Éupdate‚³‚ê‚énumpy“™‚àimport‚Å‚«‚È‚­‚È‚éjB
-
-Conda update conda,conda update anaconda‚µ‚Ä‚©‚çdeap ,sklearn-deap‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚½‚Æ‚±‚ë‚¤‚Ü‚­‚¢‚Á‚½B"	
+Conda update conda,conda update anaconda‚µ‚Ä‚©‚ç(‰Á‚¦‚Äconda update scipy‚µ‚Ä‚©‚çH)A
+pip install deap
+pip install sklearn-deap
+‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚½‚Æ‚±‚ë‚¤‚Ü‚­‚¢‚Á‚½B"	
 
 python‚Ìmultiprocessing@‚Å‚È‚º‚©ipython‚Éƒ\[ƒXƒR[ƒh‚ğ’£‚è•t‚¯‚Å‚ÍÀs‚Å‚«‚¸B	
 
