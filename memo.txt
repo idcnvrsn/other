@@ -20,7 +20,6 @@ h2o.deeplearning(x = 1:4, y = 5, training_frame = iris.hex, activation = ""Tanh"
 h2o.shutdown(localH2O)"
 
 "sql server データベースを違うディレクトリに移動したいとき、そのディレクトリにMSSQL$TESTDBを設定し、ユーザー権限(フル権限）を与える。
-
 オブジェクト名：NT Service\MSSQL$TESTDB　場所：そのPC名
 で設定できる。
 アタッチ、デタッチでディレクトリ移動できるようになる。"	
