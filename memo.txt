@@ -45,6 +45,7 @@ pythonのmultiprocessing　でなぜかipythonにソースコードを張り付けでは実行できず。
 
 pythonのmultiprocessing　でなぜかspyderのipythonだと何かで不具合が起こると再起動まで？うまく動かず。コンソールからpyhon ***.pyするのがベストか？Ipythonとは相性悪いのか？？	
 
-xgboost gitからtortoisesvnを使ってデータを落とした。Full recursiveで全部落ちてくるので slnをもつ最新のバージョンにてjavawrapper以外を64bitReleaseでビルド。Python bindingフォルダでpython setup.py install	
+xgboost gitからtortoisesvnを使ってデータを落とした。Full recursiveで全部落ちてくるので slnをもつ最新のバージョンにてjavawrapper以外を64bitReleaseでビルド。Python bindingフォルダでpython setup.py install
+ビルドの段階でsetup.py内にビルド結果の絶対パスが記載されるので、他のPC等にコピーする際には注意。	
 
 xgboost はmultioutputには対応していない模様。	
