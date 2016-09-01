@@ -49,3 +49,23 @@ xgboost gitからtortoisesvnを使ってデータを落とした。Full recursiveで全部落ちてく
 ビルドの段階でsetup.py内にビルド結果の絶対パスが記載されるので、他のPC等にコピーする際には注意。	
 
 xgboost はmultioutputには対応していない模様。	
+
+■chainerサンプル
+https://github.com/pfnet/chainer/tree/master/examples
+からサンプルをダウンロード
+・mnist
+python mnist.py --gpu 0
+
+・imagenet
+git clone https://github.com/BVLC/caffe.git
+
+python assemble_data.py --workers=-1 --images=80000 --seed 831486
+
+python crop.py caffe/data/flickr_style/images_raw caffe/data/flickr_style/images
+
+python compute_mean.py data\flickr_style\train.txt
+
+以下のようなコマンドライン発行
+python train_imagenet.py -g 0 train.txt test.txt 2>&1 | tee log
+python train_imagenet.py -g 0  data/flickr_style/train.txt  data/flickr_style/test.txt
+python train_imagenet.py -g 0  data/flickr_style/train.txt  data/flickr_style/test.txt 2>&1 | tee log
