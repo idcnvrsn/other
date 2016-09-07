@@ -30,7 +30,12 @@ h2o.shutdown(localH2O)"
 pip install --no-cache-dir chainer
 でいけた。依存するライブラリを更新したせいかも。"	
 pip install PySide==1.2.2　などとしてバージョンを指定してインストールできる	
-Chainerはインストールの順番が大事か？VC++,nvidia ドライバー、chainerの順？	
+Chainerはインストールの順番が大事か？VC++,nvidia ドライバー、chainerの順？
+
+chainer(2016/9/6のバージョンだと）python3.4,vc++10,cuda7.5にインストールできず。
+最新リポジトリをgit cloneして、
+git checkout 144c4be8e9a08d9428705b18006c7152ade7f5fb
+とし、python setup.py install したところ、1.13.0がインストールできた。gpuも動いてる模様。
 
 python joblib.dump データサイズによっては？？Compress=1だと失敗する場合がある模様。無圧縮でシリアライズすればよい。	
 
